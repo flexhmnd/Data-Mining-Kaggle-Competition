@@ -22,15 +22,11 @@ Leaderboard Placement: 6th / ~50 teams
 
 ├── README.md
 
-├── kaggle_project.ipynb     # Notebook with EDA
+├── kaggle_project.ipynb     # Notebook with EDA and final model + submission
 
-├── model.ipynb              # Main notebook with training, evaluation, and submission
+├── model.ipynb              # Notebook with training and evaluation of different models
 
-├── lemmatizer.py            # Script for lemmatizing tweets
-
-├── training_data.xlsx                             # Provided training data
-
-└── test_data.xlsx                                 # Provided test data (no labels)
+└── lemmatizer.py            # Script for lemmatizing tweets
 
 
 **Approach**
