@@ -22,15 +22,15 @@ Leaderboard Placement: 6th / ~50 teams
 ├── submission.csv                        # Final predictions for Kaggle submission
 ├── requirements.txt                      # Project dependencies
 └── plots/
-    └── confusion_matrix.png              # Model performance visualization
 
 **Approach**
 
 Data Preprocessing:
-  Tokenization & lowercasing
-  Removal of URLs, mentions, and punctuation
-  Stopword removal (optional)
-  TF-IDF vectorization of tweets
+  - Tokenization & lowercasing
+  - Removal of URLs, mentions, and punctuation
+  - Stopword removal
+  - TF-IDF vectorization of tweets
+
 Modeling
 Multinomial Logistic Regression
 Used stratified train/validation split for tuning
