@@ -16,12 +16,17 @@ Leaderboard Placement: 6th / ~50 teams
 **Project Structure**
 
 ├── README.md
-├── tweets_political_classifier.ipynb     # Main notebook with training, evaluation, and submission
-├── train.csv                             # Provided training data
-├── test.csv                              # Provided test data (no labels)
-├── submission.csv                        # Final predictions for Kaggle submission
-├── requirements.txt                      # Project dependencies
-└── plots/
+
+├── kaggle_project.ipynb     # Notebook with EDA
+
+├── model.ipynb              # Main notebook with training, evaluation, and submission
+
+├── lemmatizer.py            # Script for lemmatizing tweets
+
+├── training_data.xlsx                             # Provided training data
+
+└── test_data.xlsx                                 # Provided test data (no labels)
+
 
 **Approach**
 
@@ -31,21 +36,9 @@ Data Preprocessing:
   - Stopword removal
   - TF-IDF vectorization of tweets
 
-Modeling
-Multinomial Logistic Regression
-Used stratified train/validation split for tuning
-Evaluated using accuracy and confusion matrix
-Submission
-Trained on full data
-Generated predictions on test set for Kaggle submission
-📊 Results
+Modeling: Logistic Regression
 
-Metric	Value
-Accuracy	78%
-Rank	6/50
-The model performed especially well in distinguishing between left and right, with occasional confusion in identifying centrist tweets.
-
-🛠 Requirements
+**Requirements**
 
 Python 3.8+
 scikit-learn
@@ -53,11 +46,8 @@ pandas
 matplotlib
 seaborn
 nltk
-Install requirements with:
 
-pip install -r requirements.txt
-🧠 Key Learnings
+**Key Learnings**
 
-TF-IDF combined with Logistic Regression is surprisingly effective for political text classification.
-Language used by politicians differs strongly by ideology, even across countries.
-Preprocessing choices (like whether to keep stopwords) can have a significant impact on model performance.
+TF-IDF combined with Logistic Regression is surprisingly effective for political text classification and outperformed my attempts at SVM, Random Forest, and Neural Networks.
+Preprocessing choices (like setting the n-grams in the TF-IDF vectorizer) can have a significant impact on model performance.
