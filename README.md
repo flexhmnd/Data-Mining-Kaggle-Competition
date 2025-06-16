@@ -7,10 +7,15 @@ This project involved building a machine learning model to classify the politica
 **Overview**
 
 Task: Multiclass classification (left, center, right)
+
 Input: Tweet text from European politicians
+
 Output: Predicted political stance
+
 Model Used: Logistic Regression
+
 Final Accuracy: 78%
+
 Leaderboard Placement: 6th / ~50 teams
 
 **Project Structure**
@@ -41,10 +46,15 @@ Modeling: Logistic Regression
 **Requirements**
 
 Python 3.8+
+
 scikit-learn
+
 pandas
+
 matplotlib
+
 seaborn
+
 nltk
 
 **Key Learnings**
